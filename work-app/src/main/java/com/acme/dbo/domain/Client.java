@@ -1,9 +1,9 @@
 package com.acme.dbo.domain;
 
 public class Client {
-    private final Integer id;
-    private final String name;
-    private final String email;
+    private Integer id;
+    private String name;
+    private String email;
 
     public Client(int id, String name, String email) {
         this.id = id;
@@ -11,10 +11,7 @@ public class Client {
         this.email = email;
     }
 
-    public Client(String name, String email) {
-        this.id = 0;
-        this.name = name;
-        this.email = email;
+    public Client() {
     }
 
     public int getId() {

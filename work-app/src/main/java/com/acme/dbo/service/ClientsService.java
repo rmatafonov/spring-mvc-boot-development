@@ -14,8 +14,12 @@ public class ClientsService {
         this.clientRepository = clientRepository;
     }
 
+    public Client create(final Client client) {
+        return clientRepository.create(client);
+    }
+
     public Client create(final String name, final String email) {
-        return clientRepository.create(new Client(name, email));
+        return clientRepository.create(new Client(0, name, email));
     }
 
     public Client findById(Integer id) {

@@ -3,6 +3,7 @@ package com.acme.dbo.repository;
 import com.acme.dbo.domain.Client;
 import org.springframework.stereotype.Repository;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
